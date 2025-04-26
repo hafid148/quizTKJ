@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="start" id="start">
+      <audio src="start.mp3" id="mulai"></audio>
+      <h1>Mulai Quiz</h1>
+      <button onclick="start()">mulai</button>
+      <h3 id="lastScore"></h3>
+    </div>
+    <div class="top" id="top">
+      <div class="alert" id="alert"></div>
+      <div class="form" id="form"></div>
+      <div class="load" id="load">
+        <div class="loader" id="loader"></div>
+      </div>
+    </div>
+
+    <div class="container" id="container">
+      <h1 id="questions"></h1>
+      <img
+        src="audio.png"
+        onclick="playSound('harddisk')"
+        alt=""
+        id="audioHarddisk"
+        class="audioBakso"
+      />
+      <audio src="continue.mp3" id="next"></audio>
+      <audio src="wrong-47985.mp3" id="error"></audio>
+      <audio src="ttsmaker-file-2025-2-1-10-1-48.mp3" id="harddisk"></audio>
+      <img src="motherboard.jpg" alt="" id="motherboard" class="sateAyam" />
+      <img src="processor.jfif" alt="" id="processor" class="sateAyam" />
+      <div class="file" id="file"></div>
+      <div class="opsi">
+        <input type="radio" name="pilih" data-id="0" id="pilih0" />
+        <label for="pilih0" id="pilihText0"></label>
+
+        <input type="radio" name="pilih" data-id="1" id="pilih1" />
+        <label for="pilih1" id="pilihText1"></label>
+
+        <input type="radio" name="pilih" data-id="2" id="pilih2" />
+        <label for="pilih2" id="pilihText2"></label>
+
+        <input type="radio" name="pilih" data-id="3" id="pilih3" />
+        <label for="pilih3" id="pilihText3"></label>
+      </div>
+      <button id="next" onclick="nextQuestions()">Continue</button>
+    </div>
+    <div class="hasil" id="hasil">
+      <audio src="success.mp3" id="success"></audio>
+      <div class="benar" id="benar"></div>
+      <div class="nilai" id="nilai"></div>
+      <a href="index.html"><button>mulai ulang</button></a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
